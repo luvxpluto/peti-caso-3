@@ -17,7 +17,7 @@ function HomePage() {
           >
             <p className="section-lead">
               [PLACEHOLDER] Texto introductorio para explicar cómo se usarán estos módulos
-              como insumo para el análisis AS-IS, definición TO-BE y construcción del PETI.
+              como insumo para el diagnóstico digital, la priorización estratégica y construcción del PETI.
             </p>
           </SectionBlock>
 

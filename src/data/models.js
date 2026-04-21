@@ -9,34 +9,6 @@ export const modelOrder = [
   'bcg-dai',
 ]
 
-const sharedLevels = [
-  {
-    level: 1,
-    title: '[PLACEHOLDER] Inicial',
-    description: '[PLACEHOLDER] Capacidades aisladas, bajo control formal y baja medición.',
-  },
-  {
-    level: 2,
-    title: '[PLACEHOLDER] Gestionado',
-    description: '[PLACEHOLDER] Prácticas repetibles, métricas básicas y gobierno incipiente.',
-  },
-  {
-    level: 3,
-    title: '[PLACEHOLDER] Definido',
-    description: '[PLACEHOLDER] Procesos integrados y alineados con objetivos de negocio.',
-  },
-  {
-    level: 4,
-    title: '[PLACEHOLDER] Medido',
-    description: '[PLACEHOLDER] Decisiones basadas en datos y seguimiento continuo de valor.',
-  },
-  {
-    level: 5,
-    title: '[PLACEHOLDER] Optimizado',
-    description: '[PLACEHOLDER] Mejora continua, innovación escalable y adaptación permanente.',
-  },
-]
-
 export const models = [
   {
     id: 'dmm',
@@ -57,11 +29,35 @@ export const models = [
       '[PLACEHOLDER] Tecnología y datos',
       '[PLACEHOLDER] Cultura y talento',
     ],
-    maturityLevels: sharedLevels,
-    asIs:
-      '[PLACEHOLDER] Registrar capacidades actuales, brechas críticas, restricciones operativas y nivel de adopción digital.',
-    toBe:
-      '[PLACEHOLDER] Definir capacidades objetivo, arquitectura futura, iniciativas priorizadas y métricas de avance.',
+    maturityLevels: [
+      {
+        level: 1,
+        title: '[PLACEHOLDER] Inicial',
+        description: '[PLACEHOLDER] Capacidades digitales aisladas, bajo control formal y baja medición.',
+      },
+      {
+        level: 2,
+        title: '[PLACEHOLDER] Gestionado',
+        description: '[PLACEHOLDER] Prácticas repetibles, métricas básicas y gobierno digital incipiente.',
+      },
+      {
+        level: 3,
+        title: '[PLACEHOLDER] Definido',
+        description: '[PLACEHOLDER] Capacidades digitales integradas y alineadas con objetivos de negocio.',
+      },
+      {
+        level: 4,
+        title: '[PLACEHOLDER] Medido',
+        description: '[PLACEHOLDER] Decisiones basadas en datos y seguimiento continuo de valor digital.',
+      },
+      {
+        level: 5,
+        title: '[PLACEHOLDER] Optimizado',
+        description: '[PLACEHOLDER] Innovación digital escalable, aprendizaje continuo y adaptación permanente.',
+      },
+    ],
+    targetOrganization:
+      '[PLACEHOLDER] Describir el tipo de organización objetivo para aplicar este modelo: tamaño, sector, nivel de formalización, capacidades digitales esperadas y condiciones estratégicas recomendadas.',
     petiUse:
       '[PLACEHOLDER] Explicar cómo este modelo alimenta objetivos estratégicos, portafolio de proyectos, mapa de capacidades y gobierno del PETI.',
     advantages:
@@ -98,16 +94,34 @@ export const models = [
       '[PLACEHOLDER] Organización y talento',
     ],
     maturityLevels: [
-      { ...sharedLevels[0], title: '[PLACEHOLDER] Exploratorio' },
-      { ...sharedLevels[1], title: '[PLACEHOLDER] Emergente' },
-      { ...sharedLevels[2], title: '[PLACEHOLDER] Integrado' },
-      { ...sharedLevels[3], title: '[PLACEHOLDER] Escalado' },
-      { ...sharedLevels[4], title: '[PLACEHOLDER] Transformador' },
+      {
+        level: 1,
+        title: '[PLACEHOLDER] Exploratorio',
+        description: '[PLACEHOLDER] Iniciativas digitales puntuales sin visión corporativa consolidada.',
+      },
+      {
+        level: 2,
+        title: '[PLACEHOLDER] Emergente',
+        description: '[PLACEHOLDER] Casos de uso relevantes con patrocinio inicial y métricas básicas.',
+      },
+      {
+        level: 3,
+        title: '[PLACEHOLDER] Integrado',
+        description: '[PLACEHOLDER] Capacidades digitales coordinadas entre áreas clave del negocio.',
+      },
+      {
+        level: 4,
+        title: '[PLACEHOLDER] Escalado',
+        description: '[PLACEHOLDER] Plataformas, gobierno y métricas habilitan expansión sostenida del valor.',
+      },
+      {
+        level: 5,
+        title: '[PLACEHOLDER] Transformador',
+        description: '[PLACEHOLDER] La organización opera con modelos digitales y mejora continua.',
+      },
     ],
-    asIs:
-      '[PLACEHOLDER] Documentar la ambición digital actual, capacidades disponibles y madurez de ejecución.',
-    toBe:
-      '[PLACEHOLDER] Diseñar una agenda de transformación con capacidades objetivo y portafolio priorizado.',
+    targetOrganization:
+      '[PLACEHOLDER] Describir el tipo de organización objetivo para este enfoque: empresas con patrocinio ejecutivo, ambición digital clara, necesidad de alinear inversiones tecnológicas con capacidades de negocio y foco en experiencia del cliente.',
     petiUse:
       '[PLACEHOLDER] Relacionar inversiones tecnológicas con prioridades de negocio, capacidades digitales y valor esperado.',
     advantages:
@@ -144,16 +158,34 @@ export const models = [
       '[PLACEHOLDER] Innovación y escalamiento',
     ],
     maturityLevels: [
-      { ...sharedLevels[0], title: '[PLACEHOLDER] Conciencia' },
-      { ...sharedLevels[1], title: '[PLACEHOLDER] Experimentación' },
-      { ...sharedLevels[2], title: '[PLACEHOLDER] Sistematización' },
-      { ...sharedLevels[3], title: '[PLACEHOLDER] Escala' },
-      { ...sharedLevels[4], title: '[PLACEHOLDER] Negocio digital' },
+      {
+        level: 1,
+        title: '[PLACEHOLDER] Conciencia',
+        description: '[PLACEHOLDER] La organización reconoce oportunidades digitales pero actúa de forma fragmentada.',
+      },
+      {
+        level: 2,
+        title: '[PLACEHOLDER] Experimentación',
+        description: '[PLACEHOLDER] Se ejecutan pilotos y pruebas con aprendizaje controlado.',
+      },
+      {
+        level: 3,
+        title: '[PLACEHOLDER] Sistematización',
+        description: '[PLACEHOLDER] Las capacidades digitales empiezan a integrarse en procesos de negocio.',
+      },
+      {
+        level: 4,
+        title: '[PLACEHOLDER] Escala',
+        description: '[PLACEHOLDER] Plataformas y gobierno sostienen crecimiento digital medible.',
+      },
+      {
+        level: 5,
+        title: '[PLACEHOLDER] Negocio digital',
+        description: '[PLACEHOLDER] Productos, datos y ecosistemas digitales definen la ventaja competitiva.',
+      },
     ],
-    asIs:
-      '[PLACEHOLDER] Identificar etapa actual, experimentos existentes, brechas de plataforma y nivel de adopción.',
-    toBe:
-      '[PLACEHOLDER] Formular un estado objetivo de negocio digital con capacidades escalables y métricas estratégicas.',
+    targetOrganization:
+      '[PLACEHOLDER] Describir el tipo de organización objetivo: empresas que buscan evolucionar hacia negocio digital, plataformas, ecosistemas, innovación escalable y decisiones ejecutivas basadas en capacidades tecnológicas.',
     petiUse:
       '[PLACEHOLDER] Usar el modelo para definir iniciativas de plataforma, datos, innovación y gobierno del portafolio PETI.',
     advantages:
@@ -190,20 +222,34 @@ export const models = [
       '[PLACEHOLDER] Mejora continua',
     ],
     maturityLevels: [
-      { ...sharedLevels[0], description: '[PLACEHOLDER] Procesos impredecibles, reactivos y dependientes de esfuerzos individuales.' },
-      { ...sharedLevels[1], description: '[PLACEHOLDER] Prácticas básicas de gestión permiten repetir resultados en proyectos.' },
-      { ...sharedLevels[2], description: '[PLACEHOLDER] Procesos organizacionales estandarizados y documentados.' },
       {
-        ...sharedLevels[3],
+        level: 1,
+        title: '[PLACEHOLDER] Inicial',
+        description: '[PLACEHOLDER] Procesos impredecibles, reactivos y dependientes de esfuerzos individuales.',
+      },
+      {
+        level: 2,
+        title: '[PLACEHOLDER] Gestionado',
+        description: '[PLACEHOLDER] Prácticas básicas de gestión permiten repetir resultados en proyectos.',
+      },
+      {
+        level: 3,
+        title: '[PLACEHOLDER] Definido',
+        description: '[PLACEHOLDER] Procesos organizacionales estandarizados, documentados y comunicados.',
+      },
+      {
+        level: 4,
         title: '[PLACEHOLDER] Cuantitativamente gestionado',
         description: '[PLACEHOLDER] Desempeño controlado con métricas, variabilidad y objetivos cuantitativos.',
       },
-      { ...sharedLevels[4], description: '[PLACEHOLDER] Mejora continua basada en innovación, análisis causal y aprendizaje.' },
+      {
+        level: 5,
+        title: '[PLACEHOLDER] Optimizado',
+        description: '[PLACEHOLDER] Mejora continua basada en innovación, análisis causal y aprendizaje.',
+      },
     ],
-    asIs:
-      '[PLACEHOLDER] Evaluar disciplina de procesos, consistencia de entrega, métricas y puntos de variación.',
-    toBe:
-      '[PLACEHOLDER] Definir procesos objetivo, métricas de control, gobierno operativo y prácticas de mejora.',
+    targetOrganization:
+      '[PLACEHOLDER] Describir el tipo de organización objetivo: áreas de TI, operaciones o desarrollo que necesitan formalizar procesos, controlar calidad, mejorar predictibilidad y fortalecer la ejecución del portafolio.',
     petiUse:
       '[PLACEHOLDER] Aplicar CMMI para fortalecer la ejecución del portafolio PETI, calidad de servicios y gobernanza.',
     advantages:
@@ -240,16 +286,34 @@ export const models = [
       '[PLACEHOLDER] Métricas de valor',
     ],
     maturityLevels: [
-      { ...sharedLevels[0], title: '[PLACEHOLDER] Rezagado' },
-      { ...sharedLevels[1], title: '[PLACEHOLDER] Básico' },
-      { ...sharedLevels[2], title: '[PLACEHOLDER] Competente' },
-      { ...sharedLevels[3], title: '[PLACEHOLDER] Avanzado' },
-      { ...sharedLevels[4], title: '[PLACEHOLDER] Líder digital' },
+      {
+        level: 1,
+        title: '[PLACEHOLDER] Rezagado',
+        description: '[PLACEHOLDER] Baja adopción digital y capacidades desconectadas del negocio.',
+      },
+      {
+        level: 2,
+        title: '[PLACEHOLDER] Básico',
+        description: '[PLACEHOLDER] Iniciativas digitales limitadas con resultados parciales.',
+      },
+      {
+        level: 3,
+        title: '[PLACEHOLDER] Competente',
+        description: '[PLACEHOLDER] Capacidades relevantes y gestión digital en áreas críticas.',
+      },
+      {
+        level: 4,
+        title: '[PLACEHOLDER] Avanzado',
+        description: '[PLACEHOLDER] La organización escala productos, datos y formas ágiles de trabajo.',
+      },
+      {
+        level: 5,
+        title: '[PLACEHOLDER] Líder digital',
+        description: '[PLACEHOLDER] La ventaja competitiva se apoya en capacidades digitales sostenidas.',
+      },
     ],
-    asIs:
-      '[PLACEHOLDER] Medir el punto de partida en estrategia, capacidades, talento, agilidad y orientación a valor.',
-    toBe:
-      '[PLACEHOLDER] Establecer una aspiración de DQ, capacidades críticas y prácticas de gestión objetivo.',
+    targetOrganization:
+      '[PLACEHOLDER] Describir el tipo de organización objetivo: empresas que desean acelerar capacidades digitales, medir preparación competitiva, fortalecer talento, cultura, agilidad y orientación a valor.',
     petiUse:
       '[PLACEHOLDER] Convertir brechas de cociente digital en iniciativas de talento, datos, arquitectura y gobierno.',
     advantages:
@@ -286,16 +350,34 @@ export const models = [
       '[PLACEHOLDER] Impacto y escalamiento',
     ],
     maturityLevels: [
-      { ...sharedLevels[0], title: '[PLACEHOLDER] Inicial' },
-      { ...sharedLevels[1], title: '[PLACEHOLDER] En desarrollo' },
-      { ...sharedLevels[2], title: '[PLACEHOLDER] Acelerando' },
-      { ...sharedLevels[3], title: '[PLACEHOLDER] Avanzado' },
-      { ...sharedLevels[4], title: '[PLACEHOLDER] Líder' },
+      {
+        level: 1,
+        title: '[PLACEHOLDER] Inicial',
+        description: '[PLACEHOLDER] Transformación poco estructurada y capacidades digitales limitadas.',
+      },
+      {
+        level: 2,
+        title: '[PLACEHOLDER] En desarrollo',
+        description: '[PLACEHOLDER] Primeros habilitadores digitales con resultados localizados.',
+      },
+      {
+        level: 3,
+        title: '[PLACEHOLDER] Acelerando',
+        description: '[PLACEHOLDER] Portafolio digital priorizado y capacidades escalables en construcción.',
+      },
+      {
+        level: 4,
+        title: '[PLACEHOLDER] Avanzado',
+        description: '[PLACEHOLDER] Digital core robusto, datos disponibles y operación ágil expandida.',
+      },
+      {
+        level: 5,
+        title: '[PLACEHOLDER] Líder',
+        description: '[PLACEHOLDER] La organización acelera innovación digital y captura valor de forma sostenida.',
+      },
     ],
-    asIs:
-      '[PLACEHOLDER] Evaluar aceleración actual, brechas en digital core, datos, talento y escalamiento.',
-    toBe:
-      '[PLACEHOLDER] Diseñar aceleradores prioritarios, iniciativas de plataforma, capacidades de IA y métricas de impacto.',
+    targetOrganization:
+      '[PLACEHOLDER] Describir el tipo de organización objetivo: empresas que buscan acelerar resultados digitales, comparar avance frente a referentes, fortalecer digital core, datos, IA y nuevas formas de trabajo.',
     petiUse:
       '[PLACEHOLDER] Traducir el índice en una hoja de ruta PETI centrada en aceleración, valor y capacidades digitales.',
     advantages:

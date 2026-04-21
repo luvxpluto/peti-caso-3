@@ -58,18 +58,9 @@ function ModulePage() {
           <StepProgress levels={model.maturityLevels} />
         </SectionBlock>
 
-        <SectionBlock eyebrow="04" title="Aplicación práctica (AS-IS / TO-BE)">
-          <div className="split-grid">
-            <div className="state-card">
-              <p className="eyebrow">AS-IS</p>
-              <h3>Estado actual</h3>
-              <p>{model.asIs}</p>
-            </div>
-            <div className="state-card state-card-highlight">
-              <p className="eyebrow">TO-BE</p>
-              <h3>Estado objetivo</h3>
-              <p>{model.toBe}</p>
-            </div>
+        <SectionBlock eyebrow="04" title="Tipo de organización objetivo">
+          <div className="content-panel">
+            <p>{model.targetOrganization}</p>
           </div>
         </SectionBlock>
 

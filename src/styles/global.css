@@ -438,7 +438,6 @@ main {
 .section-lead,
 .page-header p,
 .content-panel p,
-.state-card p,
 .insight-card p,
 .selection-card p,
 .module-card p,
@@ -464,7 +463,6 @@ main {
 .module-card,
 .selection-card,
 .content-panel,
-.state-card,
 .insight-card,
 .highlight-question,
 .conclusion-panel {
@@ -516,7 +514,6 @@ main {
 
 .module-card h3,
 .selection-card h3,
-.state-card h3,
 .insight-card h3,
 .step-item h3 {
   margin: 10px 0 8px;
@@ -707,26 +704,10 @@ main {
   font-size: 0.92rem;
 }
 
-.split-grid,
 .insight-grid,
 .selection-grid {
   display: grid;
   gap: 18px;
-}
-
-.split-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.state-card {
-  padding: 28px;
-}
-
-.state-card-highlight {
-  border-color: rgba(102, 231, 255, 0.28);
-  background:
-    radial-gradient(circle at top right, rgba(102, 231, 255, 0.18), transparent 42%),
-    rgba(255, 255, 255, 0.055);
 }
 
 .insight-grid {
@@ -1023,7 +1004,6 @@ main {
   .modules-grid,
   .selection-grid,
   .dimension-grid,
-  .split-grid,
   .insight-grid {
     grid-template-columns: 1fr;
   }
@@ -1053,7 +1033,6 @@ main {
 
   .content-panel,
   .conclusion-panel,
-  .state-card,
   .insight-card {
     padding: 22px;
   }

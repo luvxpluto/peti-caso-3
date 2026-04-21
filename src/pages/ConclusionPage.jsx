@@ -22,8 +22,8 @@ function ConclusionPage() {
             <p>
               [PLACEHOLDER] Redactar aquí la conclusión estratégica. Indicar el modelo
               principal seleccionado, los modelos complementarios, los criterios usados para
-              justificar la selección y cómo la combinación aporta al diagnóstico AS-IS,
-              al diseño TO-BE, al portafolio de iniciativas y al gobierno del PETI.
+              justificar la selección y cómo la combinación aporta al diagnóstico digital,
+              a la priorización del portafolio de iniciativas y al gobierno del PETI.
             </p>
           </div>
         </SectionBlock>
