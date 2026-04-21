@@ -448,6 +448,13 @@ main {
   line-height: 1.75;
 }
 
+.content-panel p,
+.insight-card p,
+.dimension-item p,
+.conclusion-panel p {
+  white-space: pre-line;
+}
+
 .section-lead {
   max-width: 800px;
   margin: 0;
@@ -514,6 +521,7 @@ main {
 
 .module-card h3,
 .selection-card h3,
+.dimension-item h3,
 .insight-card h3,
 .step-item h3 {
   margin: 10px 0 8px;
@@ -620,12 +628,12 @@ main {
 
 .dimension-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
   gap: 14px;
 }
 
 .dimension-item {
-  min-height: 156px;
+  min-height: 230px;
   padding: 20px;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -646,15 +654,19 @@ main {
   background: rgba(102, 231, 255, 0.08);
 }
 
+.dimension-item h3 {
+  margin-top: 20px;
+}
+
 .dimension-item p {
-  margin: 18px 0 0;
+  margin: 0;
   font-weight: 600;
 }
 
 .step-progress {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+  gap: 12px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -665,18 +677,14 @@ main {
   position: relative;
   min-height: 248px;
   padding: 22px 18px;
+  border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.13);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035)),
     linear-gradient(135deg, rgba(122, 128, 145, 0.22), rgba(102, 231, 255, 0.06));
 }
 
-.step-item:first-child {
-  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
-}
-
 .step-item:last-child {
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04)),
     linear-gradient(135deg, rgba(203, 124, 253, 0.18), rgba(102, 231, 255, 0.24));
@@ -711,7 +719,7 @@ main {
 }
 
 .insight-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
 }
 
 .insight-card {
@@ -841,18 +849,6 @@ main {
     linear-gradient(135deg, rgba(77, 48, 255, 0.22), rgba(255, 255, 255, 0.05));
 }
 
-.content-panel p {
-  white-space: pre-line;
-}
-
-.insight-card p {
-  white-space: pre-line;
-}
-
-.dimension-item p {
-  white-space: pre-line;
-}
-
 .highlight-question h2 {
   max-width: 960px;
   margin: 12px 0 0;
@@ -957,20 +953,8 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .dimension-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .step-progress {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .step-item,
-  .step-item:first-child,
-  .step-item:last-child {
+  .step-item {
     min-height: auto;
-    border-radius: var(--radius-lg);
   }
 }
 
