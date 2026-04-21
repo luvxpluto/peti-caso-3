@@ -16,7 +16,7 @@ export const models = [
     name: 'Digital Maturity Model',
     organization: 'Google y Boston Consulting Group (BCG)',
     route: '/modelos/dmm',
-    sourceUrl: sourcePlaceholderUrl,
+    sourceUrl: 'https://docs.google.com/document/d/1-l6moH67NkAf_egWuLbFwsTaRFTj8unm/edit',
     icon: 'orbit',
     cardDescription:
       'Modelo para diagnosticar capacidades digitales, identificar brechas AS-IS/TO-BE y orientar una hoja de ruta de transformación digital.',
@@ -80,7 +80,7 @@ export const models = [
     name: 'Deloitte Digital Maturity Model',
     organization: 'Deloitte',
     route: '/modelos/deloitte',
-    sourceUrl: sourcePlaceholderUrl,
+    sourceUrl: 'https://docs.google.com/document/d/1i3cjEo5IHNuE0hPsEy3C7YivxBtTJFiM8tpcdPsYS74/edit?tab=t.0#heading=h.cikeexuhhaz5',
     icon: 'signal',
     cardDescription:
       'Marco para evaluar capacidades digitales, identificar brechas y orientar iniciativas de transformación digital con apoyo de benchmarking sectorial.',
@@ -151,7 +151,7 @@ export const models = [
     name: 'Gartner Digital Business Maturity Model',
     organization: 'Gartner',
     route: '/modelos/gartner',
-    sourceUrl: sourcePlaceholderUrl,
+    sourceUrl: 'https://docs.google.com/document/d/1phsujY4FGS0n4v6Gmb8Eapz5S6DjHBSic7BE75gahMM/edit?tab=t.0#heading=h.ik5hj7wj7gx2',
     icon: 'radar',
     cardDescription:
       'Modelo de referencia para medir la madurez digital, orientar inversiones y construir una hoja de ruta hacia operaciones digitales más avanzadas.',
@@ -223,7 +223,7 @@ export const models = [
     name: 'Capability Maturity Model Integration',
     organization: 'CMMI Institute / ISACA',
     route: '/modelos/cmmi',
-    sourceUrl: sourcePlaceholderUrl,
+    sourceUrl: 'https://docs.google.com/document/d/10CjcBsa7vUhrOgpN8r2Dem40YCnJfylX-WPquaid5Ls/edit?tab=t.0#heading=h.keqakc42dvhs',
     icon: 'layers',
     cardDescription:
       'Referencia de madurez de procesos para mejorar calidad, eficiencia, predictibilidad y control en la ejecución organizacional.',
@@ -292,7 +292,7 @@ export const models = [
     name: 'McKinsey Digital Quotient',
     organization: 'McKinsey & Company',
     route: '/modelos/mckinsey-dq',
-    sourceUrl: sourcePlaceholderUrl,
+    sourceUrl: 'https://docs.google.com/document/d/1G2vVXMuWRYTdOyLeTQxqYSa1x_SsrP7P/edit',
     icon: 'spark',
     cardDescription:
       'Enfoque para medir la madurez digital a partir de prácticas de gestión asociadas con mejor desempeño digital y financiero.',
@@ -351,7 +351,7 @@ export const models = [
     name: 'BCG Digital Acceleration Index',
     organization: 'Boston Consulting Group',
     route: '/modelos/bcg-dai',
-    sourceUrl: sourcePlaceholderUrl,
+    sourceUrl: 'https://docs.google.com/document/d/1JtHXGZ9nREqmUekgWViDoxaXDIoPYxidl5tjHlJ9h9w/edit?tab=t.0',
     icon: 'prism',
     cardDescription:
       'Índice para evaluar madurez digital, comparar el posicionamiento frente al sector y priorizar inversiones de transformación.',
