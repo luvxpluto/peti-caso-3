@@ -841,6 +841,18 @@ main {
     linear-gradient(135deg, rgba(77, 48, 255, 0.22), rgba(255, 255, 255, 0.05));
 }
 
+.content-panel p {
+  white-space: pre-line;
+}
+
+.insight-card p {
+  white-space: pre-line;
+}
+
+.dimension-item p {
+  white-space: pre-line;
+}
+
 .highlight-question h2 {
   max-width: 960px;
   margin: 12px 0 0;
