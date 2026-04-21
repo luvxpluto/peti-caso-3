@@ -15,10 +15,6 @@ function HomePage() {
             title="Seis enfoques para diagnosticar, comparar y priorizar madurez digital"
             className="section-block-compact"
           >
-            <p className="section-lead">
-              [PLACEHOLDER] Texto introductorio para explicar cómo se usarán estos módulos
-              como insumo para el diagnóstico digital, la priorización estratégica y construcción del PETI.
-            </p>
           </SectionBlock>
 
           <div className="modules-grid">

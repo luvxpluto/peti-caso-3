@@ -318,6 +318,8 @@ main {
 }
 
 .button {
+  position: relative;
+  isolation: isolate;
   display: inline-flex;
   min-height: 44px;
   align-items: center;
@@ -329,6 +331,7 @@ main {
   font-size: 0.92rem;
   font-weight: 700;
   text-decoration: none;
+  overflow: hidden;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -342,8 +345,18 @@ main {
 
 .button-primary {
   color: var(--polar-white);
-  background: linear-gradient(135deg, var(--cosmic-pink), var(--midnight-purple));
+  border-color: rgba(255, 255, 255, 0.12);
+  background: transparent;
   box-shadow: var(--shadow-glow);
+}
+
+.button-primary::before {
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  content: '';
+  background: linear-gradient(135deg, var(--cosmic-pink) 0%, #8d55ff 48%, var(--midnight-purple) 100%);
 }
 
 .button-secondary {

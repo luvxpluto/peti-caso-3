@@ -66,7 +66,7 @@ export const models = [
       '• Modelo simple y fácil de comunicar a la alta dirección. \n• Basado en investigación empírica y benchmarking sectorial.\n• Herramienta pública de autodiagnóstico disponible.\n• Vincula la madurez digital con resultados de negocio como ingresos y eficiencia operativa.\n• Flexible y aplicable en múltiples sectores.',
     limitations:
       '• El modelo tiene un origen centrado en marketing digital. \n• No proporciona guías detalladas para la gestión de procesos de TI.\n• Puede existir subjetividad en la asignación de niveles de madurez.\n• No define una hoja de ruta específica de implementación, la cual debe construirse de forma independiente.',
-    videoUrl: 'https://www.youtube.com/embed/Wmh2dv5Uqm8',
+    videoUrl: 'https://www.youtube.com/embed/cqdOZzO-hGE',
     levelsCount: '4',
     keyDimensions:
       'Estrategia, organización y personas, datos y audiencia, tecnología y activos digitales, medición y procesos',
@@ -137,7 +137,7 @@ export const models = [
       '• Fue diseñado inicialmente para el sector de telecomunicaciones, por lo que algunas métricas requieren adaptación en otros sectores. \n• Su aplicación completa requiere tiempo, recursos y participación organizacional amplia.\n• Parte del diagnóstico se basa en autoevaluaciones, lo que puede generar sesgos en los resultados.',
     idealContext:
       'Organizaciones medianas y grandes que requieren un diagnóstico estructurado de sus capacidades digitales y comparar su desempeño con referentes del sector.',
-    videoUrl: 'https://www.youtube.com/embed/McXRe3nPn_Y',
+    videoUrl: 'https://www.youtube.com/embed/LHZFCcSIndM',
     levelsCount: '5',
     keyDimensions:
       'Cliente, estrategia, tecnología, operaciones, organización y cultura',
@@ -208,7 +208,7 @@ export const models = [
       '• El acceso a los instrumentos completos de evaluación requiere suscripción a la plataforma de Gartner. \n• Parte del diagnóstico se basa en autoevaluaciones, lo que puede generar sesgos en los resultados.\n• Algunas capacidades requieren actualización constante debido a la rápida evolución del entorno digital.',
     idealContext:
       'Organizaciones con múltiples unidades de negocio y estructuras de gobernanza establecidas que buscan alinear capacidades digitales con objetivos de negocio.',
-    videoUrl: 'https://www.youtube.com/embed/',
+    videoUrl: 'https://www.youtube.com/embed/Tj8N5UIJm0c',
     levelsCount: '5',
     keyDimensions:
       'Estrategia, cultura y liderazgo, organización, operaciones, tecnología',
@@ -278,7 +278,7 @@ export const models = [
       '• La implementación del modelo requiere tiempo, recursos y cambios organizacionales significativos. \n• Puede percibirse como complejo o burocrático si no se gestiona adecuadamente el cambio organizacional.\n• La adopción del modelo implica revisar y formalizar procesos existentes dentro de la organización.',
     idealContext:
       'Áreas de TI y organizaciones que requieren control, consistencia, calidad y mejora continua de procesos.',
-    videoUrl: 'https://www.youtube.com/embed/',
+    videoUrl: 'https://www.youtube.com/embed/P0UL6K68ARM',
     levelsCount: '5',
     keyDimensions:
       'Personas, procedimientos y métodos, herramientas y tecnologías',
@@ -337,7 +337,7 @@ export const models = [
       '• La interpretación de los resultados depende del contexto de comparación utilizado. \n• El nivel de madurez digital se evalúa de forma relativa frente a otras organizaciones o sectores.\n• Los resultados pueden variar según el benchmark utilizado para el análisis.',
     idealContext:
       'Organizaciones consolidadas que buscan evaluar su madurez digital, crear una agenda digital y modernizar su operación.',
-    videoUrl: 'https://www.youtube.com/embed/',
+    videoUrl: 'https://www.youtube.com/embed/NEoPqvWXUWE',
     levelsCount: '3',
     keyDimensions:
       'Estrategia, organización y talento, entrega ágil y cultura, capacidades, adopción y escalamiento',
@@ -403,7 +403,7 @@ export const models = [
       '• Depende del acceso a datos comparativos con otras organizaciones del sector. \n• Puede perder precisión si no existen suficientes referencias de benchmarking.\n• No profundiza en la gestión detallada de procesos o gobernanza tecnológica.',
     idealContext:
       'Empresas que ya iniciaron su digitalización y quieren comparar su madurez frente al mercado para orientar decisiones estratégicas.',
-    videoUrl: 'https://www.youtube.com/embed/',
+    videoUrl: 'https://www.youtube.com/embed/c4h31FC_BjU',
     levelsCount: '4',
     keyDimensions:
       'Estrategia, cliente, tecnología, procesos, datos, cultura y habilidades digitales',
