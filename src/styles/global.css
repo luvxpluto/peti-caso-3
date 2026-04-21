@@ -308,6 +308,15 @@ main {
   line-height: 1.72;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 34px;
+}
+
 .button {
   display: inline-flex;
   min-height: 44px;
@@ -332,7 +341,6 @@ main {
 }
 
 .button-primary {
-  margin-top: 34px;
   color: var(--polar-white);
   background: linear-gradient(135deg, var(--cosmic-pink), var(--midnight-purple));
   box-shadow: var(--shadow-glow);
@@ -1000,7 +1008,8 @@ main {
     margin-left: 0;
   }
 
-  .button-primary {
+  .hero-actions {
+    justify-content: flex-start;
     margin-top: 28px;
   }
 
