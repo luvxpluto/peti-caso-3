@@ -70,7 +70,7 @@ function ModulePage() {
           </div>
         </SectionBlock>
 
-        <SectionBlock eyebrow="06" title="Ventajas, Limitaciones y Contexto ideal">
+        <SectionBlock eyebrow="06" title="Ventajas y Limitaciones">
           <div className="insight-grid">
             <article className="insight-card">
               <ModelIcon name="check" />
@@ -81,11 +81,6 @@ function ModulePage() {
               <ModelIcon name="limit" />
               <h3>Limitaciones</h3>
               <p>{model.limitations}</p>
-            </article>
-            <article className="insight-card">
-              <ModelIcon name="target" />
-              <h3>Contexto ideal</h3>
-              <p>{model.idealContext}</p>
             </article>
           </div>
         </SectionBlock>
