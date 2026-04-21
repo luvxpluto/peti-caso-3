@@ -1,4 +1,5 @@
 import FloatingParticles from './FloatingParticles'
+import { caseContextUrl, caseSolutionUrl } from '../data/models'
 
 function Hero() {
   return (
@@ -11,9 +12,27 @@ function Hero() {
           Un entorno visual para comparar, explorar y preparar modelos de madurez digital
           como insumo estratégico para la construcción de un PETI.
         </p>
-        <a className="button button-primary" href="#modulos">
-          Explorar módulos
-        </a>
+        <div className="hero-actions">
+          <a className="button button-primary" href="#modulos">
+            Explorar módulos
+          </a>
+          <a
+            className="button button-secondary"
+            href={caseContextUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Contexto del caso práctico
+          </a>
+          <a
+            className="button button-muted"
+            href={caseSolutionUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Solución de caso práctico
+          </a>
+        </div>
       </div>
       <div className="hero-orbital" aria-hidden="true">
         <span />

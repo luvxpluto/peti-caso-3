@@ -1,4 +1,6 @@
 export const sourcePlaceholderUrl = 'https://docs.google.com/document/d/PLACEHOLDER'
+export const caseContextUrl = 'https://docs.google.com/document/d/1V0mZwx5Xd4gH2VsWayui9U8DNiPOGhN4TzKc9Dokyuc/edit?usp=sharing'
+export const caseSolutionUrl = 'https://docs.google.com/document/d/1afxMzLwExNLoYHOvDEadwL6K-JFiFWe4nwkcg-UcCFE/edit?usp=sharing'
 
 export const modelOrder = [
   'dmm',
