@@ -116,7 +116,6 @@ function ModulePage() {
               allowFullScreen
             />
           </div>
-          <p className="video-note">[PLACEHOLDER] Reemplazar el src del iframe en el archivo de datos.</p>
         </SectionBlock>
 
         <ModelNavigation previous={previous} next={next} />
