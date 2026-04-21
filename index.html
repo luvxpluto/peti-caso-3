@@ -1,13 +1,197 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>peti-caso-3</title>
+    <meta
+      name="description"
+      content="Plataforma estática para explorar modelos de madurez digital aplicados al PETI."
+    />
+    <title>Plataforma de Modelos de Madurez Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body data-page="home">
+    <div class="background-grid" aria-hidden="true"></div>
+    <canvas class="background-particles" id="particle-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">PETI</span>
+          <span class="brand-copy">
+            <strong>Madurez Digital</strong>
+            <small>Plataforma Web</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="is-active">Inicio</a>
+          <a href="dmm.html">DMM</a>
+          <a href="deloitte.html">Deloitte</a>
+          <a href="gartner.html">Gartner</a>
+          <a href="cmmi.html">CMMI</a>
+          <a href="mckinsey.html">McKinsey DQ</a>
+          <a href="bcg.html">BCG DAI</a>
+          <a href="comparacion.html">Comparación</a>
+          <a href="conclusion.html">Conclusión</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Transformación Digital · Planificación Estratégica · PETI</span>
+            <h1>Plataforma de Modelos de Madurez Digital</h1>
+            <p>
+              Explora una base navegable para analizar marcos de madurez digital,
+              compararlos y conectarlos con la construcción de un PETI.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#modelos">Explorar Modelos</a>
+              <a class="button button-secondary" href="comparacion.html">Ver Comparación</a>
+            </div>
+          </div>
+
+          <div class="hero-panel glass-card reveal">
+            <div class="hero-orbit" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="hero-metrics">
+              <article>
+                <strong>6</strong>
+                <span>Modelos base</span>
+              </article>
+              <article>
+                <strong>PETI</strong>
+                <span>Enfoque estratégico</span>
+              </article>
+              <article>
+                <strong>100%</strong>
+                <span>Navegación estática</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-tag">Marco conceptual</span>
+            <h2>¿Qué es la Madurez Digital?</h2>
+            <p>
+              Es la capacidad de una organización para integrar estrategia, procesos,
+              tecnología, personas y datos con el fin de evolucionar de forma sostenida.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="glass-card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">📊</div>
+              <h3>Diagnóstico</h3>
+              <p>Permite evaluar el estado actual y detectar brechas clave.</p>
+            </article>
+            <article class="glass-card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">⚙️</div>
+              <h3>Capacidades</h3>
+              <p>Relaciona procesos, talento y tecnología en una sola vista.</p>
+            </article>
+            <article class="glass-card feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">🚀</div>
+              <h3>Evolución</h3>
+              <p>Orienta iniciativas futuras y metas de transformación digital.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="modelos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-tag">Módulos</span>
+            <h2>Explora los modelos</h2>
+            <p>
+              Cada módulo ya tiene su layout preparado para que el equipo complete
+              propósito, dimensiones, niveles y aplicación en el PETI.
+            </p>
+          </div>
+
+          <div class="module-grid">
+            <article class="glass-card module-card reveal">
+              <div class="module-icon" aria-hidden="true">🧭</div>
+              <h3>DMM</h3>
+              <p>Base estructurada para evaluar capacidades digitales organizacionales.</p>
+              <a class="button button-tertiary" href="dmm.html">Ver Módulo</a>
+            </article>
+            <article class="glass-card module-card reveal">
+              <div class="module-icon" aria-hidden="true">🏢</div>
+              <h3>Deloitte</h3>
+              <p>Enfoque empresarial para orientar evolución y gobernanza digital.</p>
+              <a class="button button-tertiary" href="deloitte.html">Ver Módulo</a>
+            </article>
+            <article class="glass-card module-card reveal">
+              <div class="module-icon" aria-hidden="true">📡</div>
+              <h3>Gartner</h3>
+              <p>Perspectiva estratégica sobre negocio digital y capacidades clave.</p>
+              <a class="button button-tertiary" href="gartner.html">Ver Módulo</a>
+            </article>
+            <article class="glass-card module-card reveal">
+              <div class="module-icon" aria-hidden="true">🛠️</div>
+              <h3>CMMI</h3>
+              <p>Madurez enfocada en mejora continua, procesos y disciplina operativa.</p>
+              <a class="button button-tertiary" href="cmmi.html">Ver Módulo</a>
+            </article>
+            <article class="glass-card module-card reveal">
+              <div class="module-icon" aria-hidden="true">🧠</div>
+              <h3>McKinsey DQ</h3>
+              <p>Índice integral para medir capacidades digitales y de gestión.</p>
+              <a class="button button-tertiary" href="mckinsey.html">Ver Módulo</a>
+            </article>
+            <article class="glass-card module-card reveal">
+              <div class="module-icon" aria-hidden="true">📈</div>
+              <h3>BCG DAI</h3>
+              <p>Modelo comparativo orientado a aceleración y desempeño digital.</p>
+              <a class="button button-tertiary" href="bcg.html">Ver Módulo</a>
+            </article>
+          </div>
+
+          <div class="quick-links reveal">
+            <a class="button button-primary" href="comparacion.html">Comparación entre Modelos</a>
+            <a class="button button-secondary" href="conclusion.html">Conclusión Estratégica</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Curso PETI · 2026 · Plataforma de apoyo para análisis de madurez digital</p>
+        <p>Créditos del grupo: <!-- CONTENIDO: integrantes del equipo --></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

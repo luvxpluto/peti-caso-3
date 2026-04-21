@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparación | Modelos de Madurez Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="comparacion">
+    <div class="background-grid" aria-hidden="true"></div>
+    <canvas class="background-particles" id="particle-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a class="brand" href="index.html"><span class="brand-mark">PETI</span><span class="brand-copy"><strong>Madurez Digital</strong><small>Plataforma Web</small></span></a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html">Inicio</a>
+          <a href="dmm.html">DMM</a>
+          <a href="deloitte.html">Deloitte</a>
+          <a href="gartner.html">Gartner</a>
+          <a href="cmmi.html">CMMI</a>
+          <a href="mckinsey.html">McKinsey DQ</a>
+          <a href="bcg.html">BCG DAI</a>
+          <a href="comparacion.html" class="is-active">Comparación</a>
+          <a href="conclusion.html">Conclusión</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-shell">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="index.html">Inicio</a><span>></span><span>Comparación</span></nav>
+        <section class="page-hero glass-card reveal">
+          <div>
+            <span class="eyebrow">Vista comparativa</span>
+            <div class="page-header">
+              <div class="page-icon" aria-hidden="true">📊</div>
+              <div>
+                <h1>Comparación entre modelos</h1>
+                <span class="badge">Tabla, radar y criterios de selección</span>
+              </div>
+            </div>
+          </div>
+          <div class="aside-card">
+            <h3>Notas de uso</h3>
+            <div class="placeholder-copy">
+              <div class="placeholder-item">Los datos ya están montados como base visual y pueden ajustarse más adelante.</div>
+              <div class="placeholder-item"><!-- CONTENIDO: consideraciones adicionales del equipo --></div>
+            </div>
+          </div>
+        </section>
+        <section class="comparison-table-wrapper reveal" aria-label="Tabla comparativa de modelos">
+          <table>
+            <thead>
+              <tr>
+                <th>Modelo</th>
+                <th>Organización</th>
+                <th>Nº de niveles</th>
+                <th>Dimensiones clave</th>
+                <th>Enfoque principal</th>
+                <th>Ideal para</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>DMM</td><td><!-- CONTENIDO --></td><td>5</td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td></tr>
+              <tr><td>Deloitte</td><td>Deloitte</td><td>5</td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td></tr>
+              <tr><td>Gartner</td><td>Gartner</td><td>5</td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td></tr>
+              <tr><td>CMMI</td><td><!-- CONTENIDO --></td><td>5</td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td></tr>
+              <tr><td>McKinsey DQ</td><td>McKinsey &amp; Company</td><td>5</td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td></tr>
+              <tr><td>BCG DAI</td><td>Boston Consulting Group</td><td>5</td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td><td><!-- CONTENIDO --></td></tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="chart-panel reveal">
+          <div class="section-heading">
+            <span class="section-tag">Visualización</span>
+            <h2>Gráfico radar</h2>
+            <p>La gráfica queda configurada con datos de ejemplo para que puedan afinarlos después.</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="comparison-chart" aria-label="Gráfico radar comparativo de modelos"></canvas>
+          </div>
+        </section>
+        <section class="section-heading reveal">
+          <span class="section-tag">Selección</span>
+          <h2>¿Cuándo usar cada modelo?</h2>
+          <p>Cada tarjeta está preparada para resumir el mejor contexto de uso de cada enfoque.</p>
+        </section>
+        <section class="comparison-card-grid reveal">
+          <article class="compare-card"><h3>DMM</h3><div class="placeholder-item"><!-- CONTENIDO: criterio de selección DMM --></div></article>
+          <article class="compare-card"><h3>Deloitte</h3><div class="placeholder-item"><!-- CONTENIDO: criterio de selección Deloitte --></div></article>
+          <article class="compare-card"><h3>Gartner</h3><div class="placeholder-item"><!-- CONTENIDO: criterio de selección Gartner --></div></article>
+          <article class="compare-card"><h3>CMMI</h3><div class="placeholder-item"><!-- CONTENIDO: criterio de selección CMMI --></div></article>
+          <article class="compare-card"><h3>McKinsey DQ</h3><div class="placeholder-item"><!-- CONTENIDO: criterio de selección McKinsey DQ --></div></article>
+          <article class="compare-card"><h3>BCG DAI</h3><div class="placeholder-item"><!-- CONTENIDO: criterio de selección BCG DAI --></div></article>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
