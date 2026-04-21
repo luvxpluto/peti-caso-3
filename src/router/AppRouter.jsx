@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage'
 import ModulePage from '../pages/ModulePage'
 import ComparisonPage from '../pages/ComparisonPage'
 import ConclusionPage from '../pages/ConclusionPage'
+import MinutesPage from '../pages/MinutesPage'
 import NotFoundPage from '../pages/NotFoundPage'
 
 export const appRouter = createBrowserRouter([
@@ -26,6 +27,10 @@ export const appRouter = createBrowserRouter([
       {
         path: 'conclusion',
         element: <ConclusionPage />,
+      },
+      {
+        path: 'minutas',
+        element: <MinutesPage />,
       },
       {
         path: '*',
