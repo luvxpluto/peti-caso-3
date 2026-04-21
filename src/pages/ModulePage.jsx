@@ -7,6 +7,22 @@ import StepProgress from '../components/StepProgress'
 import { getAdjacentModels, modelsById } from '../data/models'
 import NotFoundPage from './NotFoundPage'
 
+const parseDimension = (dimension) => {
+  if (typeof dimension === 'object') {
+    return dimension
+  }
+
+  const [title, ...descriptionParts] = dimension
+    .split('\n')
+    .map((part) => part.trim())
+    .filter(Boolean)
+
+  return {
+    title,
+    description: descriptionParts.join('\n\n'),
+  }
+}
+
 function ModulePage() {
   const { modelSlug } = useParams()
   const model = modelsById[modelSlug]
@@ -45,12 +61,17 @@ function ModulePage() {
 
         <SectionBlock eyebrow="02" title="Dimensiones de análisis">
           <div className="dimension-grid">
-            {model.dimensions.map((dimension, index) => (
-              <div className="dimension-item" key={dimension}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <p>{dimension}</p>
-              </div>
-            ))}
+            {model.dimensions.map((dimension, index) => {
+              const parsedDimension = parseDimension(dimension)
+
+              return (
+                <div className="dimension-item" key={`${parsedDimension.title}-${index}`}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <h3>{parsedDimension.title}</h3>
+                  <p>{parsedDimension.description}</p>
+                </div>
+              )
+            })}
           </div>
         </SectionBlock>
 
