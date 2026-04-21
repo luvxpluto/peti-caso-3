@@ -5,6 +5,7 @@ import { models } from '../data/models'
 const secondaryLinks = [
   { label: 'Comparación', to: '/comparacion' },
   { label: 'Conclusión', to: '/conclusion' },
+  { label: 'Minutas', to: '/minutas' },
 ]
 
 function Header() {
