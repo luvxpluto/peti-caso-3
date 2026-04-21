@@ -1,26 +1,22 @@
-function ComparisonTable({ models }) {
+function ComparisonTable({ models, criteria }) {
   return (
-    <div className="table-shell" tabIndex="0" aria-label="Tabla comparativa con desplazamiento horizontal">
+    <div className="table-shell" tabIndex="0" aria-label="Tabla comparativa de modelos">
       <table className="comparison-table">
         <thead>
           <tr>
-            <th>Modelo</th>
-            <th>Organización</th>
-            <th>Nº de niveles</th>
-            <th>Dimensiones clave</th>
-            <th>Enfoque principal</th>
-            <th>Ideal para</th>
+            <th>Criterio</th>
+            {models.map((model) => (
+              <th key={model.id}>{model.shortName}</th>
+            ))}
           </tr>
         </thead>
         <tbody>
-          {models.map((model) => (
-            <tr key={model.id}>
-              <th scope="row">{model.shortName}</th>
-              <td>{model.organization}</td>
-              <td>{model.levelsCount}</td>
-              <td>{model.keyDimensions}</td>
-              <td>{model.mainFocus}</td>
-              <td>{model.idealFor}</td>
+          {criteria.map((item) => (
+            <tr key={item.criterion}>
+              <th scope="row">{item.criterion}</th>
+              {models.map((model) => (
+                <td key={model.id}>{item.values[model.id]}</td>
+              ))}
             </tr>
           ))}
         </tbody>

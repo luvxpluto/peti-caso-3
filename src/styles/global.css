@@ -786,32 +786,40 @@ main {
 }
 
 .table-shell {
-  overflow-x: auto;
+  overflow-x: visible;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.045);
 }
 
+.comparison-page .container {
+  width: min(calc(100% - 28px), 1440px);
+}
+
 .comparison-table {
   width: 100%;
-  min-width: 940px;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
 .comparison-table th,
 .comparison-table td {
-  padding: 18px;
+  padding: 14px 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-secondary);
   text-align: left;
   vertical-align: top;
+  line-height: 1.7;
+  font-size: 0.82rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .comparison-table thead th {
   position: sticky;
   top: 0;
   color: var(--polar-white);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
   background: rgba(14, 10, 32, 0.96);
@@ -820,6 +828,8 @@ main {
 .comparison-table tbody th {
   color: var(--polar-white);
   font-weight: 800;
+  width: 132px;
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .comparison-table tr:last-child th,
@@ -864,6 +874,16 @@ main {
   font-size: clamp(1.9rem, 4.5vw, 4.2rem);
   line-height: 1.08;
   letter-spacing: 0;
+}
+
+.conclusion-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.conclusion-emphasis {
+  color: var(--polar-white);
+  font-weight: 700;
 }
 
 .not-found-page .button {

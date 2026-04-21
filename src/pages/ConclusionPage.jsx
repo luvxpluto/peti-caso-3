@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom'
 import SectionBlock from '../components/SectionBlock'
+import {
+  conclusionClosing,
+  conclusionIntro,
+  conclusionQuestion,
+  conclusionReasons,
+  conclusionRecommendation,
+} from '../data/comparison'
+import { models } from '../data/models'
 
 function ConclusionPage() {
   return (
@@ -12,19 +20,30 @@ function ConclusionPage() {
 
         <section className="highlight-question reveal" aria-labelledby="question-title">
           <p className="eyebrow">Pregunta guía</p>
-          <h2 id="question-title">
-            ¿Qué modelo o combinación de modelos utilizarían como base para construir un PETI y por qué?
-          </h2>
+          <h2 id="question-title">{conclusionQuestion}</h2>
         </section>
 
-        <SectionBlock eyebrow="Respuesta editable" title="Conclusión estratégica">
+        <SectionBlock eyebrow="01" title="Conclusión estratégica">
           <div className="conclusion-panel">
-            <p>
-              [PLACEHOLDER] Redactar aquí la conclusión estratégica. Indicar el modelo
-              principal seleccionado, los modelos complementarios, los criterios usados para
-              justificar la selección y cómo la combinación aporta al diagnóstico digital,
-              a la priorización del portafolio de iniciativas y al gobierno del PETI.
-            </p>
+            <p>{conclusionIntro}</p>
+            <p className="conclusion-emphasis">{conclusionRecommendation}</p>
+            <p>{conclusionClosing}</p>
+          </div>
+        </SectionBlock>
+
+        <SectionBlock eyebrow="02" title="Rol de cada modelo en la base del PETI">
+          <div className="insight-grid">
+            {conclusionReasons.map((reason) => {
+              const model = models.find((item) => item.id === reason.modelId)
+
+              return (
+                <article key={reason.title} className="insight-card reveal">
+                  <p className="eyebrow">{model?.shortName ?? 'Modelo recomendado'}</p>
+                  <h3>{reason.title}</h3>
+                  <p>{reason.description}</p>
+                </article>
+              )
+            })}
           </div>
         </SectionBlock>
 
